@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title Jacek Zachariasz
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    = favicon_tag 'images/fav.ico'
+    / %link{:href => "//fonts.googleapis.com/css?family=VT323", :rel => "stylesheet", :type => "text/css"}
+    / %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", :rel => "stylesheet"}
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  %body
+    .cover
+      .container-fluid.full-height
+        = yield
